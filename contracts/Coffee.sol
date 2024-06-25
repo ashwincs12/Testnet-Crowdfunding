@@ -10,6 +10,7 @@ contract Coffee
     string memo;
     uint timestamp;
     address from;
+    uint value;
   }
 
   Memo[] memos;
@@ -24,7 +25,7 @@ contract Coffee
   {
     require(msg.value>0, "Please sent ether greather than value 0!");
     owner.transfer(msg.value);
-    memos.push(Memo(name,memo,block.timestamp,msg.sender));
+    memos.push(Memo(name,memo,block.timestamp,msg.sender,msg.value));
   }
 
   function viewMemos() public view returns(Memo[] memory)
