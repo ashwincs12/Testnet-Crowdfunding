@@ -41,7 +41,7 @@ const Memos = ({state}) => {
               return (
                 <tr className="bg-blue-50" key={memo.timestamp}>
                   <td className="px-4 py-2 border-b border-gray-200">{memo.name}</td>
-                  <td className="px-4 py-2 border-b border-gray-200">{Date(memo.timestamp)}</td>
+                  <td className="px-4 py-2 border-b border-gray-200">{new Date(String(memo.timestamp) * 1000).toLocaleString()}</td>
                   <td className="px-4 py-2 border-b border-gray-200">{ethers.formatEther(memo.value)}</td>
                   <td className="px-4 py-2 border-b border-gray-200">{memo.memo}</td>
                   <td className="px-4 py-2 border-b border-gray-200">{memo.from}</td>

@@ -55,7 +55,8 @@ const Buy = ({ state }) => {
         <input type="text" placeholder="Enter your name" id="name" required className='shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline block mb-3' />
         <label className='block font-bold font-sans mb-2'>Message</label>
         <input type="text" placeholder="Enter your message/memo" id="memo" required className='shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline block mb-3' />
-        <label className='block font-bold font-sans mb-2'>Value</label>
+        <label className='block font-bold font-sans mb-2'>Amount (Not enough ETH ?🤔
+          <a href='https://cloud.google.com/application/web3/faucet/ethereum/holesky' className='text-blue-700 underline' target='_blank'>Visit Faucet</a> )</label>
         <input type="text" placeholder="Enter amount you wish to donate in ETH" id="value" required className='shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline block mb-3' />
         <button type="submit" className='block bg-sky-500 hover:bg-sky-700 px-8 py-3 rounded-3xl text-2xl font-xl text-white'>{loading ? 'Processing...' : 'Pay'}</button>
       </form>
