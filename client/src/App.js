@@ -18,7 +18,7 @@ function App() {
 
   useEffect(() => {
     const connectWallet = async () => {
-      const contractAddress = "0x90BD1527c4beC2d58de285c36eE7028E0B7E3C40";
+      const contractAddress = "0xCb20C364212aaBCeA22C11212739c1E03Dca710C";
       const contractABI = abi.abi;
       
       const holeskyChainId = '0x4268'; 
@@ -130,7 +130,7 @@ function App() {
         <p className='text-blue-800 font-mono font-extrabold p-3'>Connected Account : {currentAccount}</p>
         <p className='text-blue-800 font-mono font-extrabold p-3 text-right'>Developer Account Balance :{parseFloat(ethers.formatEther(devaccBalance)).toFixed(3)} ETH</p>
       </div>
-      <h1 className="text-4xl font-bold text-blue-400 mb-4 text-center">Buy Coffee</h1>
+      <h1 className="text-4xl font-bold text-blue-400 mb-4 text-center">Donate Ether</h1>
       <Buy state={state} />
       <h1 className="text-4xl font-bold text-blue-400 mb-4 text-center mt-6">Memos</h1>
       <Memos state={state} />
