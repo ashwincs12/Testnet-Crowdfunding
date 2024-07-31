@@ -14,6 +14,7 @@ const Memos = ({state}) => {
         {
           const fetchMemos = await contract.viewMemos();
           setMemos(fetchMemos)
+          alert("This web application runs on Ethereum Holesky Network. Make sure you have an Metamask extension installed and set the network to Holesky Testnet to avaid unexpected errors.")
         }
         contract && fetch()
     }catch(err)
